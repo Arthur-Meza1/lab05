@@ -1,0 +1,66 @@
+ #   Arista 
+ 1:   3–7    
+ 2:   1–4    
+ 3:   7–8    
+ 4:   0–5    
+ 5:   5–2    
+ 6:   3–8    
+ 7:   2–9    
+ 8:   0–6    
+ 9:   4–9    
+ 10:  2–6    
+ 11:  6–4    
+
+
+
+Comenzado desde 0 
+
+Primera etapa 
+0 dfsR(G, 0)
+    0-5 dfsR(G, 5)
+        5-0 ............. (0 ya visitado)
+        5-2 dfsR(G, 2)
+            2-5 ............. (5 ya visitado)
+            2-9 dfsR(G, 9)
+                9-2 ............. (2 ya visitado)
+                9-4 dfsR(G, 4)
+                    4-1 dfsR(G, 1)
+                        1-4 ............. (4 ya visitado)
+                    1
+                    4-9 ............. (9 ya visitado)
+                    4-6 dfsR(G, 6)
+                        6-0 ............. (0 ya visitado)
+                        6-2 ............. (2 ya visitado)
+                        6-4 ............. (4 ya visitado)
+                    6
+                4
+            9
+            2-6 ............. (6 ya visitado)
+        2
+    5
+    0-6 ............. (6 ya visitado)
+0
+
+
+Continuacion de 1,2,3 ...9
+
+Ya que los vertices como 0,1,2,4,5,6,9 ya fueron visitados seria que el primer no visitado seria 3
+
+3 dfsR(G, 3)
+    3-7 dfsR(G, 7)
+        7-3 ............. (3 ya visitado)
+        7-8 dfsR(G, 8)
+            8-7 ............. (7 ya visitado)
+            8-3 ............. (3 ya visitado)
+        8
+    7
+    3-8 ............. (8 ya visitado)
+3
+
+
+
+
+1.-vertices visitodos(w):  0, 5, 2, 6, 4, 1, 9, 3, 7, 8
+2.-Numero de orden (prev[w]):  0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+

@@ -1,0 +1,4 @@
+/home/arthur-max/Documentos/ADA_lab/lab05/build/CMakeFiles/ejer5.dir
+/home/arthur-max/Documentos/ADA_lab/lab05/build/CMakeFiles/ejer7.dir
+/home/arthur-max/Documentos/ADA_lab/lab05/build/CMakeFiles/edit_cache.dir
+/home/arthur-max/Documentos/ADA_lab/lab05/build/CMakeFiles/rebuild_cache.dir

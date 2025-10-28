@@ -1,0 +1,48 @@
+vertice   Lista de Adyacencia
+0:             1,4
+1:              2,5
+2:              3
+3:              7
+4:              8
+5:              4
+6:              5,10,2
+7:              11,6
+8:              9
+9:              5,8
+10:             9
+11:             10
+
+Comenzara desde el primer vertice 0,1,2....11 si no hay sido visitados 
+ctn = 0
+
+0 dfsR(G, 0)
+    0-1 dfsR(G, 1)
+        1-2 dfsR(G, 2)
+            2-3 dfsR(G, 3)
+                3-7 dfsR(G, 7)
+                    7-11 dfsR(G, 11)
+                        11-10 dfsR(G, 10)
+                            10-9 dfsR(G, 9)
+                                9-5 dfsR(G, 5)
+                                    5-4 dfsR(G, 4)
+                                        4-8 dfsR(G, 8)
+                                            8-9 ............. (9 ya visitado)
+                                        8
+                                    4
+                                5
+                            9-8 ............. (8 ya visitado)
+                        9
+                    10
+                11
+                7-6 dfsR(G, 6)
+                    6-5 ............. (5 ya visitado)
+                    6-10 ............ (10 ya visitado)
+                    6-2 ............. (2 ya visitado)
+                6
+            7
+        3
+    2
+    1-5 ............. (5 ya visitado)
+1
+0-4 ............. (4 ya visitado)
+0
